@@ -1,0 +1,885 @@
+:root {
+    --brand-color: #2f303a;
+    --color-selected: #2196f3;
+    --secundary-color: white;
+    --tertiary-color: #f5f4fa;
+    --go-service: #188ce8;
+    --principal-text-color: #757575;
+    --color-icons: #afb1b8;
+  }
+  
+
+/*codigo que se aplica a toda la pagina*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+}
+
+h1, h2, h3, p, ul, img, button {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*web Principal*/
+
+/*photo background*/
+.fondo{
+    background-image: url(../images/fondo.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 200px 0;
+    min-width: 1200px;
+    
+}
+
+.title{
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding-bottom: 30px;
+
+    line-height: 1.36;   /* 60px/44px= 1.36*/
+        /* or 136% */
+}         
+       
+/* section nuestro equipo fondo page principal */
+.our-team {  
+    
+    background: #F5F4FA;
+    padding: 94px 90px 0px 90px;
+
+}
+
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;   /* 42px/36px= 1.16  */
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;  /* 19px/16px= 1.18  */
+    /* identical to box height  text-align: center; */
+    
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+   
+}
+/*description about job*/
+.job{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;    /* 19px/16px= 1.18  */
+    /* identical to box height */
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Encabezado web portfolio, web Principal*/
+span { color: #212121;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;}
+
+.webstudio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    color: #2196F3;
+
+    padding-right: 100px;
+    
+}
+
+.study{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: #212121;
+    
+    
+}
+
+.study:hover {      
+    color: #2196F3;
+    
+} /* CSS link hover (azul) */
+
+.study:focus {
+    color: #2196F3; 
+    } /* CSS link focus  solo letra con color (azul)  con tab */
+
+.study-active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /*line-height: 16px; para la tarea 3 */
+    
+    color: #2196F3;
+}/* CSS link NAV (azul) */
+
+.portfolio{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: #212121;
+    
+}
+.portfolio:hover,
+.portfolio:focus {
+    color: #2196F3;} /* CSS link hover (azul) */
+
+ 
+.portfolio-active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /*line-height: 16px;  para la tarea 3 */ 
+    color: #2196F3;}   /* CSS link navegacion  toca con el mismo nombre de la clase pero agregando otra palabra nav(azul) */
+
+.contacs{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: #212121;
+    
+}
+.contacs:hover {
+    color: #2196F3;
+}/* CSS link hover (azul) */
+
+.contacs:focus {
+    color: #2196F3;
+    } /* CSS link focus  (azul)  con tab */
+
+.link{
+   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.18;  /* 19px/16px= 1.18  */
+    letter-spacing: 0.02em;
+    color: #757575;
+    padding: 10px;
+}
+.link:hover,
+.link:focus
+ {
+    color: var(--color-selected);
+}/* CSS link hover (azul) */
+/* CSS link focus  (azul)  con tab */
+
+
+/*section button  web html principal*/
+.button-principal {
+   
+    display: flex;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875em;
+    background-color: var(--color-selected);
+    color: var(--secundary-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+
+    }
+       
+.button-principal:hover,
+.button-principal:focus
+{
+    background-color: var(--go-service);
+    
+    }    
+
+
+/*section buttons  web portfolio*/
+
+.mybutton {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 18px 6px 18px;
+    margin-left: 8px;
+   
+
+    }
+
+.buttons-portfolio {
+    font-family: inherit;
+    background-color: var(--tertiary-color);
+    color: #212121;
+    font-size: 16px;
+    line-height: 1, 625em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 18px 6px 18px;
+    margin-left: 8px;
+    }
+
+.mybutton:hover {
+    background: rgba(33, 150, 243, 1);
+    color: #FFFFFF;
+    cursor: pointer;
+    cursor: hand;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;  /* 26px/16px= 1.62  */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.mybutton:focus {
+    background: #2196F3; 
+    color: #FFFFFF
+    } /* CSS link focus  (azul)  con tab */
+
+/*section description products */
+.subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;  /* 46px/18px= 2  */
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+
+    color: #212121;
+
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;    /* 30px/16px= 1.87 */
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+    margin: 0;
+}
+/*direccion para principal and portfolio*/
+.address{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+      /* 24px/14px= 1.71 */
+    /* or 171% 
+    
+    letter-spacing: 0.03em;*/
+    
+    color: #FFFFFF;  /*Este color cuando tengamos la caja con los pading*/ 
+    margin-top: 6px;
+}
+
+/*footer o pie de pagina de las dos paginas */ 
+.bottom-page{
+    background-color: var(--brand-color);
+    border: none;
+    padding: 60px 0;
+    line-height: 2em;
+
+}
+
+.webstudio-footer {
+    display: flex;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196F3;
+    text-decoration: none;
+  
+}
+
+#study { color: #FFFFFF;
+    
+    }
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', 'sans-serif';
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+    margin: 0;
+    }
+        
+ /*para volver encabezado horizontal con padding y flex*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+.link-nav {
+    padding:20px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  
+ul {
+    list-style-type:none; /*quitar viñetas en todo el body*/
+         
+  }
+  
+a {
+    text-decoration: none;  /*quitar subrayado en todo el body*/
+    /*padding: 10px;*/
+  }
+  
+.webstudio span {
+    font-weight: normal;
+  }
+  
+.study-active {
+    color:#2196F3;
+
+  }
+
+
+  /* Generic styles 
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }  ya esta aplicado en los estilos generales comienzo codigo falta margin y padding*/
+  
+  /* Container class */
+  
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+  
+  /*centrado Y ALINEACION  de section 2 PRODUCTOS*/
+
+.section-products {
+    padding: 94px 10px 0px 10px ;
+    
+    
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+ 
+.list-style {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.content-center {
+    justify-content: center;
+    display:flex;   
+
+}
+
+.horizontal-ul {
+    display: flex;
+    
+    /*list-style: none;
+    padding: 0;
+    margin: 0;*/
+}
+
+
+.box-products {
+    /*width: 300px;
+    margin-left: 32px;*/
+    margin: 0 20px;
+    
+}
+
+.box-products:first-child {
+    margin-left: 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    
+}
+
+section {
+    display: block; 
+}
+
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+
+.section-products .list-style {
+    display: flex;
+    justify-content: space-between;
+    
+
+  }
+  
+
+.box-products {
+    width: calc(25% - 20px); /* ajustar el ancho de los cuadros de productos */
+    margin: 0 10px; /* agregar un margen entre los elementos */
+  }
+
+
+/*centrado y alineacion  section 3*/
+
+.subtitle-sections {
+    color: black;
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+  .card-wedo {
+    margin-right: 70px;
+    width: 370px;
+    position: relative;
+  }
+
+/*centrado y alineacion  section 3*/
+
+.card-members {
+    
+    margin-right: 30px;
+
+    background: #FFFFFF;
+
+    /* para curvar bordes inferiores*/
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+
+
+/* MEjoras pagina portafolio, faltaba agregar dos clase para work todo de acuerdo a model box */
+
+/*buttoms*/
+.filter {
+    width: 611px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.galery {
+    flex-wrap: wrap;
+    
+    padding-top: 4px;
+}
+.cards-portfolio {
+    margin-right: 18px;
+    margin-top: 30px;
+    /*border: 1px solid var(--tertiary-color);*/
+    
+}
+
+.cards-portfolio:hover {
+    box-shadow: 0px 0px 5px 0px rgba(53, 51, 51, 0.75);
+    cursor: pointer;
+}
+
+.link-cards {
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.17em;
+    color: black;
+}
+
+.description-card {
+    padding: 20px 34px;
+    border: #F5F4FA solid 1px;
+    font-size: 0;
+    width: 370px;
+    
+}
+
+
+.text-card {
+    color: black;
+    font-size: 18px;
+    line-height: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+    
+}
+
+.type-proyect {
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    color: #757575;
+}
+
+/*icons page main study*/
+  
+/*icons mail and phone*/
+.header-icons {
+    fill: var(--principal-text-color);
+    display: flex;
+    align-items: center;
+}
+
+.header-svg {
+    margin-right: 10px;
+}
+
+.header-icons :hover,
+.header-icons :focus {
+    fill: var(--color-selected);
+}/* CSS link hover focus(azul) */
+
+/* icons antena ,clock, astronaut */
+
+.advantage {
+    display: flex;
+    padding: 25px 100px;
+    background-color: var(--tertiary-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+/* icons social media card workers*/
+
+div {
+    display: block;
+    
+}
+
+.content-center:last-child {
+    margin-right: 0;
+}
+
+.description-team {
+    padding: 30px;
+}
+
+.subtitle-team {
+    color: black;
+    font-size: 16px;
+    line-height: 1.1875;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* icons social media circle hover, active*/
+
+.circle-teams {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: VAR(--color-icons);
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-right: 10px;
+    }
+
+.circle-teams:hover,
+
+.circle-teams:focus {
+  background-color: var(--color-selected);
+  fill: var(--secundary-color);
+ cursor: pointer;
+}
+
+/*Regular Customers icons*/
+
+.clients-box {
+    width: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-icons);
+    fill: var(--color-icons);
+    padding-top: 21px;
+    padding-bottom: 13px;
+    border-radius: 4px;
+  }
+  
+
+  .card-studio {
+    width: 370px;
+    position: relative;
+  }
+  
+
+/* hover focus clients*/
+.clients-box:hover,
+.clients-box:focus {
+    fill: var(--color-selected);
+    border: 1px solid var(--color-selected);
+    cursor: pointer;
+      }
+
+/* link footer*/
+.link-footer {
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 2em;
+    color: white;
+    font-style: normal;
+    margin-bottom: 9px;
+}
+
+.link-footer:hover,
+.link-footer:focus
+ {
+    color: var(--color-selected);
+}
+
+
+/* social media  footer*/
+.find-us {
+    margin-left: 70px;
+    color: var(--secundary-color);
+  }
+  
+.circle-footer {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: VAR(--secundary-color);
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #ffffff10;
+  }
+  
+
+  .circle-footer:hover,
+  .circle-footer:focus {
+    background-color: #2196F3;
+    
+  }
+  
+/* superposition cards*/
+
+.superposition {
+    position: absolute;
+    width: 100%;
+    height: 294px;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    z-index: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.55em;
+}
+
+.img-portfolios {
+    overflow: hidden;
+    position: relative;
+    color: var(--secundary-color);
+    
+}
+/* se debe colocar img al div class img-portfolio
+para quitar la linea azul de mas es un truco 
+de experiencia*/
+
+.img-portfolios img{
+    display:block;
+
+}
+
+/* hay que colocar un hover cards-portfolio
+seguido de .superposition para que inicie 
+transformacion*/
+
+.cards-portfolio:hover .superposition {
+    transform: translateX(0);
+}
+
+
+/* what we do text product*/
+.text-product {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    color: var(--secundary-color);
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 70px;
+  }
+
+  /* class general images*/
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* barra de navegación solicite nuestro servicio 
+  VENTANA MODAL*/
+
+  /*.principal-color_background {
+    background-color: rgba(47, 48, 58, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+}*/
+
+
+
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+@keyframes open-modal {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+.modal {
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    width: 581px;
+    height: 528px;
+    animation-duration: 1500ms;
+    animation-name: open-modal;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.close {
+    border-radius: 50%;
+    border: var(--color-icons) solid 1px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    right: 8px;
+    top: 8px;
+    
+}
+
