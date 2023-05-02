@@ -729,7 +729,8 @@ div {
 .find-us {
     margin-left: 70px;
     color: var(--secundary-color);
-  }
+    font-weight: 700;
+}
   
 .circle-footer {
     display: flex;
@@ -818,17 +819,7 @@ transformacion*/
   /* barra de navegación solicite nuestro servicio 
   VENTANA MODAL*/
 
-  /*.principal-color_background {
-    background-color: rgba(47, 48, 58, 0.4);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-}*/
-
-
-
+  
 .backdrop {
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
@@ -859,7 +850,7 @@ transformacion*/
   }
 
 
-.modal {
+/*.modal {
     background-color: rgba(255, 255, 255, 1);
     position: absolute;
     width: 581px;
@@ -868,6 +859,18 @@ transformacion*/
     animation-name: open-modal;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
+}*/
+.modal {
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    animation-duration: 1500ms;
+    animation-name: open-modal;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
 }
 
 .close {
@@ -883,3 +886,174 @@ transformacion*/
     
 }
 
+.close:hover,
+.close:focus {
+  fill: var(--color-selected);
+}
+
+
+
+/* FORMULARIO  VENTANA MODAL*/
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    color: var(--secundary-color);
+    font-weight: 700;
+  }
+  
+  .email {
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    width: 358px;
+    background-color: inherit;
+    border: rgba(255, 255, 255, 0.3) solid 1px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 1em;
+    outline: none;
+  }
+  .email:hover,
+  .email:focus {
+    border-color: var(--color-selected);
+    color: var(--secundary-color);
+  }
+  
+  .form-button {
+    display: flex;
+    padding: 10px 28px 10px 39px;
+    margin-left: 12px;
+    background-color: var(--color-selected);
+    color: var(--secundary-color);
+    font-size: 16px;
+    font-weight: 700;
+    fill: var(--secundary-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    align-items: center;
+    line-height: 1.875em;
+  }
+  
+  .icon-send {
+    margin-left: 20px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 38.5px 39px 41.5px 41px;
+    align-items: center;
+  }
+  
+  .title-form {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 12px;
+  }
+  
+  .modal-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .modal-label:focus-within {
+    border-color: var(--color-selected);
+    fill: var(--color-selected);
+  }
+  .modal-input {
+    padding-left: 35px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    border: #21212120 solid 1px;
+    border-radius: 4px;
+    margin-top: 4px;
+    position: relative;
+    resize: none;
+    outline: none;
+    color: black;
+  }
+  
+  .modal-input:focus {
+    border-color: var(--color-selected);
+    fill: var(--color-selected);
+  }
+  
+  .icon-form {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    z-index: 101;
+  }
+  
+  .textarea {
+    padding-left: 12px;
+  }
+  
+  .checkbox {
+    display: flex;
+    position: relative;
+    outline: none;
+    width: 20px;
+    height: 16px;
+    margin-right: 12px;
+    margin-top: 3px;
+  }
+  
+  .checkbox::after {
+    content: '';
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/chekoff.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .checkbox:checked::after {
+    background-image: url('../images/checkon.svg');
+  }
+  
+  .label-check {
+    display: flex;
+    padding-left: 13px;
+    padding-right: 12px;
+    margin-top: 16px;
+    line-height: 1.71em;
+  }
+  
+  .modal-form-button {
+    margin-top: 4px;
+    display: flex;
+    background-color: var(--color-selected);
+    color: var(--secundary-color);
+    font-size: 16px;
+    font-weight: 700;
+    fill: var(--secundary-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 75px;
+    line-height: 1.875em;
+  }
+
+
+  /* FORMULARIO  footer*/
+  .form-footer {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 60px;
+  }
+
+  
